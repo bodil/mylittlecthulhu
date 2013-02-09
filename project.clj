@@ -7,9 +7,11 @@
                 :output-to "resources/public/client.js"
                 :optimizations :whitespace
                 :pretty-print true}}]}
-  :dependencies [[org.clojure/clojure "1.3.0"]
-                 [com.novemberain/monger "1.0.0-beta8"]
-                 [noir "1.2.2"]
+  :dependencies [[org.clojure/clojure "1.4.0"]
+                 [com.novemberain/monger "1.0.0-beta8"
+                  :exclusions [org.clojure/clojure]]
+                 [noir "1.2.2"
+                  :exclusions [org.clojure/clojure]]
                  [fetch "0.1.0-alpha2"]
                  [crate "0.2.0-alpha2"]
                  [fluentsoftware/cljs-binding "1.0.0-SNAPSHOT"]]
